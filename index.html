@@ -1,0 +1,1613 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- font awesome 5 free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <!-- Poppins font from Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/app.css">
+
+  <title>Chezer 2022-072</title>
+  <link rel="icon" href="assets/imgs/Logo-new.png">
+
+
+
+
+
+</head>
+
+<body>
+
+
+  <!--Hero ====================================== -->
+  <header class="hero container-fluid border-bottom">
+    <nav class="hero-nav container px-4 px-lg-0 mx-auto">
+      <ul class="nav w-100 list-unstyled align-items-center p-0">
+        <li class="hero-nav__item">
+          <img class="hero-nav__logo" src="assets/imgs/newnewlogo.png">
+        </li>
+        <li id="hero-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu">
+          <ul class="hero__menu-content nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0">
+            <li class="flex-grow-1">
+              <ul class="nav nav--lg-side list-unstyled align-items-center p-0">
+
+                <li class="hero-nav__item">
+                  <a href="#contact-us" class="hero-nav__link">Contact Us</a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="#aboutus" class="hero-nav__link">About Us</a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="#presentations" class="hero-nav__link">Presentations</a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="#Documents" class="hero-nav__link">Documents</a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="#Milestone" class="hero-nav__link">Milestones</a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="#project_scope" class="hero-nav__link">Project Scope</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+            class="ft-menu__close-btn animated">
+            <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </li>
+        <li class="d-lg-none flex-grow-1 d-flex flex-row-reverse hero-nav__item">
+          <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+            class="text-center px-2">
+            <i class="fas fa-bars"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero__content container mx-auto">
+      <div class="row px-0 mx-0 align-items-center">
+        <div class="col-lg-6 px-0">
+          <h1 class="hero__title mb-3">
+            Child Emotion Analyzer
+          </h1>
+          <p class="hero__paragraph mb-5">
+            Next
+          <div class="hero__btns-container">
+            <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#project_scope">
+              Check More
+            </a>
+            <a class="hero__btn btn btn-secondary mx-lg-3" href="#Documents">
+              Check Documents
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-5 mt-lg-0 mx-0">
+          <div class="hero__img-container">
+            <img src="assets/imgs/front3.png" class="hero__img w-100">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================== -->
+
+  <div id="product" class="block-5 space-between-blocks">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+        <h1 class="block__title mb-3"><span class="highlight">Introduction</span></h1>
+        <p class="block__paragraph mb-0">
+
+          Advancement of human computer interactions have led to the development of automated systems for the study of
+          facial emotions. Currently, human intervention is required to identify the emotional state of an individual,
+          thus our study proposes an automated process using a novel mobile application named Chezer which aims to
+          identify the emotion expression and recognition abilities of children. The main objective of this study is to
+          provide an affordable application to low-income families by eliminating the need for them to visit clinics for
+          child emotion related concerns. Chezer uses a multi-sensory gaming approach in developing games to identify
+          the emotion expression and recognition ability of a child, where a level and a scenario-based gaming methods
+          are implemented respectively. The games include various methods such as visual stimulation, audio stimulation
+          and quiz-based assessments to aid a parent in analyzing the ability of their children. To evaluate the games,
+          an emotion prediction model based on CNN which yields an accuracy of 90% is incorporated along with other
+          models to detect valence, arousal, and emotion levels. Valence and arousal detection models yield RMSE scores
+          of 0.23 and 0.05 respectively whereas the emotion level model which is a Random Forest classifier yields 86.5%
+          accuracy. Incorporation of valence and arousal along with an age wise emotion level prediction makes the study
+          unique in the context of children. LIRIS and EmoReact children video datasets were used for the model training
+          and testing purposes. Overall, combination of all these features in a single application makes the study
+          novel.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================================== -->
+
+  <div id="features" class="block-11 space-between-blocks">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
+        <p class="block__pre-title mb-2">GET MORE DETAILS</p>
+        <h1 class="block__title mb-3">Awesome Technical <span class="highlight">Specs</span></h1>
+        <p class="block__paragraph mb-0">
+          This mobile application consists of awesome and novel technical features which will make this product unique.
+        </p>
+      </div>
+      <div class="row align-items-center justify-content-center flex-column-reverse flex-lg-row px-2">
+        <div class="col-lg-4 col-xl-5 p-lg-5">
+          <img class="w-100" src="assets/imgs/second1.png">
+        </div>
+        <div class="col-lg-8 col-xl-6">
+          <div class="row">
+            <div class="col-md-6 mb-2-1rem">
+              <div class="card-1 card-1--selected text-center">
+                <span class="card-1__symbol mx-auto mb-4">
+                  <i class="fas fa-id-card"></i>
+                </span>
+                <h3 class="card-1__title mb-2">Facial Emotion Analysis </h3>
+                <p class="card-1__paragraph">
+                  System is implmented in a way that automatically identifies the demographic infromation of the user
+                  such age, gender and ethnicity
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-2-1rem">
+              <div class="card-1 text-center">
+                <span class="card-1__symbol mx-auto mb-4">
+                  <i class="fas fa-grin-wink"></i>
+                </span>
+                <h3 class="card-1__title mb-2">Facial Emotion Level Annotation</h3>
+                <p class="card-1__paragraph">
+                  System is well tuned to automatically identify current emotion and activity of the user to recommend
+                  music accordingly.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-2-1rem">
+              <div class="card-1 text-center">
+                <span class="card-1__symbol mx-auto mb-4">
+                  <i class="fas fa-microphone-alt"></i>
+                </span>
+                <h3 class="card-1__title mb-2">Facial Emotion Recognition</h3>
+                <p class="card-1__paragraph">
+                  Allow the child player to undertand other's facial emotions based on a scenario given and from a
+                  visually represented video clip.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-2-1rem">
+              <div class="card-1 text-center">
+                <span class="card-1__symbol mx-auto mb-4">
+                  <i class="fas fa-sign-language"></i>
+                </span>
+                <h3 class="card-1__title mb-2">Facial Emotion Expression</h3>
+                <p class="card-1__paragraph">
+                  A puzzle based mini - game which capture the video clips of child expressing basic 6 emotions and tyhe
+                  data collcted through game is analyzed based on the advance Analytical methods
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================== -->
+
+  <div id="project_scope" class="block-39 space-between-blocks">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+        <h1 class="block__title">Project Scope</h1>
+      </div>
+      <div class="row px-2">
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Literature Review
+            </h4>
+            <p class="content-block__paragraph1">
+              A Literature survey was conducted to compare the existing solutions with the proposed solution. Paper [1]
+              is a study done on music recommendation according to contexts such as demographics and contextual
+              information such as weather and holidays to recommend music. There they have implemented two steps in the
+              recommendation process, the first step for retrieving the similar contexts and the second step for
+              retrieving similar users. As a result, they have obtained 0.54 average precision with an 8% increase from
+              the previous research. In conclusion, they have proved that demographics can improve recommendation
+              performance. Paper [2] is a research conducted on convolutional neural networks that can identify the age
+              and gender from facial images, which they have focused on proposing a neural network that can be adequate
+              for the limited number of data and fit for the real-world images that are not shot in a lab setting. There
+              the research has achieved 86.8% of gender classification and 84.7% on age estimation. The neural network
+              used here in this research can help to train the deep learning model.
+              In the aspect of emotion-based music recommendation, Anurag De & Ashim Saha have studied various
+              approaches available for automatic real-time human emotion recognition based on facial expression
+              detection [3]. In summary, they have studied various approaches to real-time emotion recognition through
+              the detection of facial expression from a live video feed and have shown positive results on that. And
+              another group of researchers has studied Emotion and activity-based music player using machine learning
+              called in the paper [4].
+              In the aspect of voice-based emotion recognition, the paper [5] illustrates how the researchers have
+              created a model to identify the emotion and demographics (age/gender) by the voice using mandarin
+              utterances collected that have various emotion classes. Finally, they have compared the utterance level
+              DNN approach with the DNN-ELM approach and acquired better-weighted accuracy on both the age/gender and
+              emotion recognition task. Another group of researchers has done a study on the feature fusion method based
+              on an extreme learning machine for speech emotion recognition [6]. Here the users are proposing a method
+              to address issues in the state-of-the-art model CNN-BLSTM, convolutional neural network (CNN) that
+              directly extracts features on spectrograms, and bidirectional long, short-term memory (BLSTM)CNN-BSTM
+              model, which is used for speech emotion recognition. In the process, they have combined some different
+              methodologies and compared them with each other to identify the best technology to understand emotion in
+              speech. And as the final solution, they have proposed a feature fusion method that combines Convolutional
+              Neural Network (CNN)-based features and heuristic-based discriminative features.
+              In the aspect of gesture-based controlling of the mobile app, a study which was done on the paper [7] is
+              based on a hand gesture recognition algorithm implemented using K-NN for video annotation purposes. The
+              researchers were primarily interested in identifying 20 hand gestures. They processed the data using a
+              variety of techniques and methodologies and obtained results. Finally, the researchers find that KNN
+              outperforms principal component analysis (PCA), the subtraction technique, and the HGR method.
+              Another research was conducted on dynamic hand gesture recognition from deep learning technologies. [8] It
+              used a dataset of 2800 samples with 14 different hand
+              gesture types. They used hand skeletal sequence for dynamic hand gesture recognition; handshape descriptor
+              called the shape of connected joints for hand detection.
+              From the literature review we have done, a conclusion can be made that the research is viable.
+            </p>
+          </div>
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Research Gap
+            </h4>
+            <p class="content-block__paragraph1">
+              There are various research carried out in the field of Human emotion analysis as it is useful in the prior
+              identification of any psychological disorders within human, yet there is no realization that the emotional
+              cues expressed imply different aspects under varying age. Therefore, a common misinterpretation observed
+              is that the assumption of emotional cues expressed by adults and children to be much more similar
+              irrespective to their varying age groups. Studies also reveal that the facial expressivity increases with
+              age and most importantly children continue to learn how to produce facial expressions even in late
+              childhood. Even though literatures reveal that age is a dominating factor in understanding facial emotions
+              accurately, yet researchers have not come up with accurate findings on the influence of age in child
+              emotion with justifying facts. In fact, the analysis on the different aspects of emotion variation in
+              children could be much more challenging than that of adults due to the changes in facial features and
+              emotional cues during their growth and development.
+
+              Previous work on such aspect had only addressed the emotional states of adults dimensionally whereas
+              modelling of the variability of temporal facial expression factors are neglected. Valence and Arousal are
+              two significant dimensions of emotion that can be used to analyze rich facial emotions. Analyzing the
+              emotion alone does not cover the entire range of emotions which hinders the analysis of practical systems.
+              The levels of arousal and valence for a type of emotion or the comparisons between the two for an emotion
+              expressed by children has not been considered in previous works. Moreover, previous works either consider
+              the analysis of emotion variations or the detection of arousal and valence levels as separate works.
+
+
+
+              While there exist few works on adult facial emotion level recognition, researchers have been mainly
+              focusing on assigning a nominal / regression value indicating the intensity of the emotion which is far
+              from the perception of human towards emotion level estimation. The facial expressions are broken down into
+              individual components called Action units (AU) presented by FACS. The analysis of facial expressions using
+              AU is one of very few techniques available in assessing emotions in real time. Yet the prediction of
+              ordinal emotion levels by identifying the patterns of AU combinations with Age for growing children is an
+              unseen scope of emotion analysis
+
+              When the emotion expression ability of the child is considered, previous works focus mainly on identifying
+              the ability of child to express the given emotion only. Factors like the gender, age and inborn emotion of
+              child respective to several environments were not considered. More importantly these research are
+              conducted under a controlled environment. Research based on identifying the ability of a child to express
+              an emotion considering a gaming approach do exist, but such applications native to Sri Lanka are yet not
+              available. Existing games also require the child to upload a recorded video of them which could hinder the
+              privacy of the child
+
+              Analyzing the ability of a child to recognize an emotion has been focused on some research, yet the
+              overlapping of emotions has not been taken into consideration. Further, therapeutic approach /
+              intervention to children who have difficulty or weakness in recognizing facial emotions has not been
+              implemented so far. Even though the emotion recognition ability/ disability of a child is considered, the
+              percentage of the recognition ability/disability is not considered
+            </p>
+
+          </div>
+          <div class="content-block">
+            <h4 class="content-block__title">
+              References
+            </h4>
+            <table style="font-size: 70%;">
+              <tr>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr valign="Top">
+                <td>[1]</td>
+                <td>S. L. Ministry of Health and Indigenous Medical Services, "Guideline on Child Development Promotion and
+                  Development Screening for Primary Health Care ( PHC ) Workers; General circular:01/12/2020," 2020.</td>
+              </tr>
+              <tr valign="Top">
+                <td>[2]</td>
+                <td>M. A. a. S. Huang, "An Augmentative System with Facial and Emotion Recognition for Improving Social Skills of
+                  Children with Autism Spectrum Disorders," 2020 IEEE International Systems Conference (SysCon), 2020. </td>
+              </tr>
+              <tr valign="Top">
+                <td>[3]</td>
+                <td>H. Nomiya, "Recognition and intensity estimation of Facial expression using ensemble classifiers," International
+                  Journal of Networked and Distributed Computing, vol. 4, no. 4, pp. 203-211, 2016. . </td>
+              </tr>
+              <tr valign="Top">
+                <td>[4]</td>
+                <td>M. Kim, "LNCS 6313 - Structured Output Ordinal Regression for Dynamic Facial Emotion Intensity Prediction,"
+                  2010. . </td>
+              </tr>
+              <tr valign="Top">
+                <td>[5]</td>
+                <td> Haddad, O. Lezoray and P. Hamel, "3D-CNN for Facial Emotion Recognition in Videos", Advances in Visual
+                  Computing, pp. 298-309, 2020. Available: 10.1007/978-3-030-64559-5_23 </td>
+              </tr>
+              <tr valign="Top">
+                <td>[6]</td>
+                <td>A. Khanzada, C. Bai and F. Celepcikay, "Facial Expression Recognition with Deep Learning", arXiv.org, 2021.
+                  [Online]. Available: https://arxiv.org/abs/2004.11823. [Accessed: 23- Dec- 2021].
+                  </td>
+              </tr>
+              <tr valign="Top">
+                <td>[7]</td>
+                <td>Ana Alexandra Caldas Osorio, Rinaldo Focaccia Siciliano and Elisa Harumi Kozasa, "The Child Emotion Facial
+                  Expression Set: A Database for Emotion Recognition in Children," 29 April 2021. [Online]. Available:
+                  https://www.frontiersin.org/articles/10.3389/fpsyg.2021.666245/full</td>
+              </tr>
+              <tr valign="Top">
+                <td>[8]</td>
+                <td>Vítor H. Carvalho, Jorge Brandão and Pedro Cunha, "Tobias in the Zoo – A Serious Game for Children with Autism
+                  Spectrum Disorders," 08 October 2015. [Online]. Available: https://online-journals.org/index.php/ijac/article/view/4897 </td>
+              </tr>
+            
+            </table>
+
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Research Problem
+            </h4>
+            <p class="content-block__paragraph1">
+              It is clear that emotion analysis is required to understand the mental growth status of children. Children
+              undergo a significant mental growth throughout childhood which causes variations of emotion from time to
+              time. Moreover, they do not have the ability to stimulate muscles, recognize emotions and express emotions
+              more precisely. Thus, a need arises for an automated method to analyze the status of emotion in child
+              which we enable through a mobile application. When it comes to rich facial emotions; understanding the
+              variation of emotion levels, valence and arousal, emotion expression and recognition abilities of children
+              are not available as a single implementation which can aid child screening with ease in their natural
+              environment. No previous solutions are available to analyze the emotion levels considering the action unit
+              activation. Rich dimensions such as valence and arousal are not yet analyzed in terms of children. No
+              gaming mobile applications are available that could assess such aspects along with emotion expression and
+              recognition abilities in children so far. </p>
+          </div>
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Research Objectives
+            </h4>
+            <p class="content-block__paragraph1">
+              To provide a system that could analyze the rich facial emotion of Children to keep track of the mental and
+              cognitive development of the Child.
+            <ol class="content-block_paragraph">
+              <li>Identification of the overall Emotion level variation in Child video sources considering their Age
+                variations.</li>
+              <li>Develop a Gaming mobile application which can identify children who have difficulties in expressing
+                facial emotions considering their Age variations</li>
+              <li>Identification of the change of emotion expressed by Child in video sources along with the Valence and
+                Arousal levels</li>
+              <li>Develop a narration-based Gaming mobile application which can identify children who have difficulties
+                in recognizing facial emotions and provides an intervention through the game considering the age
+                variation</li>
+            </ol>
+            </p>
+          </div>
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Methodology
+            </h4>
+            <p class="content-block__paragraph1">
+              The proposed system to monitor the emotion expression and recognition abilities in children is developed
+              on the basis of a mobile application comprising of four components to address the research objectives. The
+              front-end of the mobile application is developed using React Native and models are deployed to Google
+              Cloud Platform and loaded using Google Cloud Functions for predictions. Firebase is considered as the
+              primary database and google sheets are used to collect data while a child plays the game with the aid of a
+              micro-service developed using Heroku Platform. All required models and details are loaded to perform an
+              analysis that is made available to the user through the mobile interface.
+
+
+
+              Application incorporates models for emotion prediction, valence arousal prediction and emotion level
+              annotation, trained and tested using LIRIS and Emo-React video datasets. Emotion prediction model is
+              developed based on a deep learning Convolutional Neural Network (CNN) model while the models for valence
+              and arousal are developed based on deep learning Recurrent Neural Network (RNN) model. Frames from
+              datasets were extracted, preprocessed and fed to the models for training purpose. OpenCV was used for face
+              detection. In addition, Adam optimizers, ReLu and Sigmoid activation functions are incorporated.
+
+
+
+              Emotion Level prediction model is developed based on Machine learning algorithm, where emotion level
+              annotations are conducted by novel techniques such as Explanatory Factor Analysis(EFA), and Independent
+              Sample t-test. Action Unit (AU) features are extracted, preprocessed and fed to the model for training
+              purpose. Open Face toolkit is used for the AU analysis.
+
+
+
+              Gaming approach has been implemented by incorporating three levels to the game. In FEE, the first level
+              analyzes the ability of a child to express the emotions by analyzing the ability to imitate their emotion
+              as shown by an emoji based expression. Children are allowed to imitate the same emojis in second level but
+              without the camera mirror, so that they express the emotion spontaneously without adjustments. Third level
+              is designed with the voice recognition module, where the child expresses the emotion that is requested by
+              the voice output. The emotion expressed during the game is captured through the phone camera and provided
+              as inputs to the CNN model, where the prediction of the actual emotion expressed by the child is obtained
+              and validated against the expected emotion.
+
+
+
+              FER task has a scenario based gaming approach where the scenarios are designed in a way that the children
+              are driven to be empathetic about it by using well known cartoon characters. The first level includes
+              scenarios with a single character, where at the end of each scenario the child has to identify emotions
+              expressed by the characters. The second level attempts in analyzing the emotion recognition ability of a
+              child by displaying short videos of unknown people. Here, the child is assessed by their ability to
+              recognize emotions in visual representation of strangers. In the third level of the game, child is shown
+              two characters that displays two different emotions. Then a quiz is used to assess the ability of child,
+              where the child has to distinguish between the characters that displayed the requested emotion.
+            </p>
+            <div>
+              <img src="assets/imgs/SysDiag.jpg" style="width:535px;height:360px;">
+            </div>
+            &nbsp;
+            
+
+      </div>
+    </div>
+  </div>
+  <!-- ===================================== -->
+
+  <div id="testimonials" class="block-20 space-between-blocks">
+    <div class="container">
+      <div class="block__header col-lg-8 col-xl-7 mx-auto text-center px-0">
+        <h1 class="block__title mb-3">Tools & Technologies</h1>
+        <p class="block__paragraph">
+          We have implemented our system with the latest stable technologies available in the market. while focusing on
+          the maintainability and performance of the system.
+        </p>
+      </div>
+      <div class="row px-2 pt-4">
+        <div class="col-lg-4">
+          <div class="testimonial-card-1 mb-5">
+            <!--p class="testimonial-card-1__paragraph mb-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen.
+            </p-->
+            <div class="block-20__person">
+              <div class="mb-2">
+                <img class="block-20__person-avatar" src="assets/imgs/python.png">
+              </div>
+              <div class="flex-grow-1 d-flex flex-column">
+                <span class="content-block__title">Python</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-card-1 mb-5">
+            <!--p class="testimonial-card-1__paragraph mb-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen.
+            </p-->
+            <div class="block-20__person">
+              <div class="mb-2">
+                <img class="block-20__person-avatar" src="assets/imgs/colab.png">
+              </div>
+              <div class="flex-grow-1 d-flex flex-column">
+                <span class="content-block__title">Google Colab</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-card-1 mb-5">
+            <!--p class="testimonial-card-1__paragraph mb-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen.
+            </p-->
+            <div class="block-20__person">
+              <div class="mb-2">
+                <img class="block-20__person-avatar" src="assets/imgs/heroku.png">
+              </div>
+              <div class="flex-grow-1 d-flex flex-column">
+                <span class="content-block__title">Heroku</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row px-2 pt-4">
+        <div class="col-lg-4">
+          <div class="testimonial-card-1 mb-5">
+            <!--p class="testimonial-card-1__paragraph mb-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen.
+            </p-->
+            <div class="block-20__person">
+              <div class="mb-2">
+                <img class="block-20__person-avatar" src="assets/imgs/flask.png">
+              </div>
+              <div class="flex-grow-1 d-flex flex-column">
+                <span class="content-block__title">FLASK</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-card-1 mb-5">
+            <!--p class="testimonial-card-1__paragraph mb-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen.
+            </p-->
+            <div class="block-20__person">
+              <div class="mb-2">
+                <img class="block-20__person-avatar" src="assets/imgs/Tensorflow.png">
+              </div>
+              <div class="flex-grow-1 d-flex flex-column">
+                <span class="content-block__title">Tensorflow</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-card-1 mb-5">
+            <!--p class="testimonial-card-1__paragraph mb-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen.
+            </p-->
+            <div class="block-20__person">
+              <div class="mb-2">
+                <img class="block-20__person-avatar" src="assets/imgs/reactnatice.png">
+              </div>
+              <div class="flex-grow-1 d-flex flex-column">
+                <span class="content-block__title">React Native</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ===================================== -->
+  <div id="Milestone">
+    <div class="block__header col-lg-8 col-xl-7 mx-auto text-center"><br>
+      <p class="block__pre-title mb-2">OUR JOURNEY</p>
+      <h1 class="fcolor mb-3">Milestones</h1>
+      <p class="bpara mb-0">
+        Below are the significant events in the course of the project that express and give visibility of the progress
+        in terms of achievements and accomplished goals.
+      </p>
+    </div>
+
+    <div class="container">
+
+      <div class="accordion" id="accordionExample">
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="hero__btn btn btn-secondary d-flex m-auto buttonm" type="button" data-toggle="collapse"
+                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Project Charter
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="fcolor">
+              <h5 class="card-2__title mb-2 highlight"> 12th January 2022</h5>
+              <p class="card-2__paragraph">
+                We proposed the idea on developing a game based mobile application which uses AI to evaluate children by
+                tracking their playing patterns.
+              </p>
+              <br>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button
+                class="btn collapsed d-flex justify-content-right hero__btn btn btn-secondary d-flex m-auto buttonm"
+                type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                Project Proposal
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="fcolor">
+              <h5 class="card-2__title mb-2 highlight"> 11th - February 2022 </h5>
+              <p class="card-2__paragraph">
+                Marks Allocated : 12% <br>
+                Deliverable : Project Proposal Document <br>
+                <br>
+                Project Proposal document acts as a very important tool which helps to organize the time as well as the
+                resources to complete the project with high standard. And also it is an informal contract to establish
+                an agreement about the content and limits of the final output.
+              </p>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn collapsed hero__btn btn btn-secondary d-flex m-auto buttonm" type="button"
+                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Progress Presentation I
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="fcolor">
+              <h5 class="card-2__title mb-2 highlight">11th May 2022</h5>
+              <p class="card-2__paragraph">
+                Marks Allocated : 15% <br>
+                <br>
+
+                Progress Presentation I helps customer to check whether we are building what the customer is expected.
+                And also it helps to make the project concrete for the customer.
+              </p>
+              <br>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn collapsed hero__btn btn btn-secondary d-flex m-auto buttonm" type="button"
+                data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Final Report ( Group & Individual )
+              </button>
+            </h5>
+          </div>
+          <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="fcolor">
+              <h5 class="card-2__title mb-2 highlight">7th November 2022 </h5>
+              <p class="card-2__paragraph">
+                Marks Allocated : 19% <br>
+                <br>
+
+                At the end of any project, a final report must be presented. This means that every project must have an
+                official conclusion. The drafting of the project final report is the moment in which it is officially
+                communicated that the project has come to an end.
+              </p>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn collapsed hero__btn btn btn-secondary d-flex m-auto buttonm" type="button"
+                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Progress Presentation II
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="fcolor">
+              <h5 class="card-2__title mb-2 highlight">10TH OCTOBER 2022</h5>
+              <p class="card-2__paragraph">
+                Marks Allocated : 12% <br>
+                <br>
+
+                By the time of Progress Presentation II, the 90% of the project works should have been finished. This
+                helps to check customer to evaluate the final progress of the system.
+              </p>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn collapsed hero__btn btn btn-secondary d-flex m-auto buttonm" type="button"
+                data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Final Presentation & Viva
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="fcolor">
+              <h5 class="card-2__title mb-2 highlight"> TO BE HELD (14th NOVEMBER 2022)</h5>
+              <p class="card-2__paragraph">
+                Marks Allocated : 20% <br>
+                <br>
+
+                The end of the assesments. The system will be evaluated against specifications and relevent questions
+                asked during the viva sessions.
+              </p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  &nbsp;<br>
+  &nbsp;
+
+  <!-- ======================================== -->
+
+  <div id="Documents" class="block-11 space-between-blocks">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
+        <h1 class="block__title mb-3">DOCUMENTS </h1>
+        <p class="block__paragraph mb-0">
+          Following are the documents related to our Research Project
+        </p>
+      </div>
+      <!-- <div class="row align-items-center justify-content-center flex-column-reverse flex-lg-row px-2">
+      <div class="col-lg-4 col-xl-5 p-lg-5">
+        <img class="w-100" src="assets/imgs/img-3.png">
+      </div> -->
+      <div class="">
+        <div class="row">
+
+          <div class="col-md-6 mb-2-1rem">
+            <div class="card-1 text-center">
+              <span class="card-1__symbol mx-auto mb-4">
+                <i class="fas fa-file-alt"></i>
+              </span>
+              <h3 class="card-1__title mb-2">Project Proposal</h3>
+              <p class="card-1__paragraph">
+                Document that fully summarizes the application to sponsors and stakeholders,
+                including the suggested plan and implementation.
+              </p>
+              <div>
+                <h6 class="mb-2" style="font-weight:600; line-height: 1.46;">Lahiru Nuwan S. - IT19158778 </h6>
+                <a href="https://drive.google.com/file/d/1cT3aEJ_sRXjrRzW6UbKYzBAdDewc3tbp/view?usp=share_link"
+                  class="d-block btn btn-secondary px-5 mx-auto" style="margin-bottom: 0.5cm;" download>
+                  Download
+                </a>
+              </div>
+              <div>
+                <h6 class="mb-2" style="font-weight:600; line-height: 1.46;"> Kovishwakarunya K. IT19080840</h6>
+                <a href="https://drive.google.com/file/d/1QAsJukgy8FhxbAXOHWJ6apI8qtJHBh80/view?usp=sharing"
+                  class="d-block btn btn-secondary px-5 mx-auto" style="margin-bottom: 0.5cm;" download>
+                  Download
+                </a>
+              </div>
+              <div>
+                <h6 class="mb-2" style="font-weight:600; line-height: 1.46;">Mariyam M.S.S. IT19175058 </h6>
+                <a href="https://drive.google.com/file/d/1mIAW-qtReHqoRZAnvriADHjOaIK10TN0/view?usp=sharing"
+                  class="d-block btn btn-secondary px-5 mx-auto" style="margin-bottom: 0.5cm;">
+                  Download
+                </a>
+              </div>
+              <div>
+                <h6 class="mb-2" style="font-weight:600; line-height: 1.46;"> Alahakoon D.N. IT19101316</h6>
+                <a href="https://drive.google.com/file/d/1rfzhtezY6T-XdGk1Fj9rCIex6bk827XR/view?usp=share_link"
+                  class="d-block btn btn-secondary px-5 mx-auto" style="margin-bottom: 0.5cm;">
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2-1rem">
+            <div class="card-1 text-center">
+              <span class="card-1__symbol mx-auto mb-4">
+                <i class="fas fa-file-alt"></i>
+              </span>
+              <h3 class="card-1__title mb-2">Final Documents</h3>
+              <p class="card-1__paragraph">
+                The final document contains details on the work
+                that was completed throughout the course of the year.
+              </p>
+              <div>
+                <h6 class="mb-2" style="font-weight:600; line-height: 1.46;">Lahiru Nuwan S. - IT19158778 </h6>
+                <a href="https://drive.google.com/file/d/1WAYKsrmLihk2wvK0aUvM6QwJIP71l8XE/view?usp=share_link"
+                  class="d-block btn btn-secondary p" style="margin-bottom: 0.5cm;" download>
+                  Download
+                </a>
+              </div>
+              <div>
+                <h6 class="mb-2" style="font-weight:600; line-height: 1.46;">Kovishwakarunya K. IT19080840 </h6>
+                <a href="https://drive.google.com/file/d/1mTBWxlV9my_1OswKTU4vygK2l8ipHq-I/view?usp=share_link"
+                  class="d-block btn btn-secondary px-5 mx-auto" style="margin-bottom: 0.5cm;" download>
+                  Download
+                </a>
+              </div>
+              <div>
+                <h6 class="mb-2" style="font-weight:600; line-height: 1.46;">Mariyam M.S.S. IT19175058</h6>
+                <a href="https://drive.google.com/file/d/1IuuyEI9soJCvd6EZdSFf0tX6gIkoXUqh/view?usp=share_link"
+                  class="d-block btn btn-secondary px-5 mx-auto" style="margin-bottom: 0.5cm;" download>
+                  Download
+                </a>
+              </div>
+              <div>
+                <h6 class="mb-2" style="font-weight:600; line-height: 1.46;">Alahakoon D.N. IT19101316 </h6>
+                <a href="https://drive.google.com/file/d/1eoeygV7Ag6dm9wdQ8YTM6ipJN5nHYG2J/view?usp=share_link"
+                  class="d-block btn btn-secondary px-5 mx-auto" style="margin-bottom: 0.5cm;" download>
+                  Download
+                </a>
+              </div>
+              <div>
+                <h6 class="mb-2" style="font-weight:600; line-height: 1.46;">Group Final </h6>
+                <a href="https://drive.google.com/file/d/14vVR_QT9DERxOq-McOLHDQiVZNQhmZf8/view?usp=share_link"
+                  class="d-block btn btn-secondary px-5 mx-auto" style="margin-bottom: 0.5cm;" download>
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2-1rem align-items-center">
+            <div class="card-1 text-center">
+              <span class="card-1__symbol mx-auto mb-4">
+                <i class="fas fa-file-alt"></i>
+              </span>
+              <h3 class="card-1__title mb-2">Research Paper</h3>
+              <p class="card-1__paragraph">
+                Academic writing that is based on the application's research.
+                All findings and solutions are presented in IEEE format!
+              </p>
+              <a href="https://drive.google.com/file/d/12o1Kb13_WjsfbYaEqlC3MWfXG1RW8JJ6/view?usp=share_link"
+                class="d-block btn btn-secondary px-5 mx-auto">
+                Download
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2-1rem">
+            <div class="card-1 card-1--selected text-center">
+              <span class="card-1__symbol mx-auto mb-4">
+                <i class="fas fa-file-alt"> </i>
+              </span>
+              <h3 class="card-1__title mb-2">Project Charter</h3>
+              <p class="card-1__paragraph">
+                Our project charter is a formal,
+                brief document that outlines our entire project,
+                including methods of implementation
+                and stakeholders.
+              </p>
+              <a href="https://drive.google.com/file/d/14uq6w3OyykX6FuNONK39KgR0_dE8Lox2/view?usp=share_link"
+                class="d-block btn btn-secondary px-5 mx-auto" download>
+                Download
+              </a>
+            </div>
+          </div>
+          <!-- <div class="col-md-6 mb-2-1rem">
+            <div class="card-1 text-center">
+              <span class="card-1__symbol mx-auto mb-4">
+                <i class="fas fa-file-alt"></i>
+              </span>
+              <h3 class="card-1__title mb-2">SRS Documents</h3>
+              <p class="card-1__paragraph">
+                Documents that provide a full description of the 
+                application as well as specific components that are related to the project, 
+                including functional and non-functional requirements!
+              </p>
+              <a href="#" class="d-block btn btn-secondary px-5 mx-auto">
+                Download
+              </a>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="presentations" class="block-11 space-between-blocks">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
+        <h1 class="block__title mb-3">PRESENTATIONS </h1>
+        <!-- <p class="block__paragraph mb-0">
+        Following are the documents related to our Research Project
+      </p> -->
+      </div>
+      <!-- <div class="row align-items-center justify-content-center flex-column-reverse flex-lg-row px-2">
+      <div class="col-lg-4 col-xl-5 p-lg-5">
+        <img class="w-100" src="assets/imgs/img-3.png">
+      </div> -->
+      <div class="">
+        <div class="row">
+          <div class="col-md-6 mb-2-1rem">
+            <div class="card-1 card-1--selected text-center">
+              <span class="card-1__symbol mx-auto mb-4">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </span>
+              <h3 class="card-1__title mb-2">Proposal Presentation</h3>
+              <!-- <p class="card-1__paragraph">
+                Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry.
+                Lorem Ipsum has been the industry’s
+                standard.
+              </p> -->
+              <a href="https://drive.google.com/file/d/1UHORZkMltkNk83y7lkN9kXqZtoWuUc4K/view?usp=share_link"
+                class="d-block btn btn-secondary px-5 mx-auto" download>
+                Download
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2-1rem">
+            <div class="card-1 text-center">
+              <span class="card-1__symbol mx-auto mb-4">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </span>
+              <h3 class="card-1__title mb-2">Progress Presentation - i(50%)</h3>
+              <!-- <p class="card-1__paragraph">
+                Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry.
+                Lorem Ipsum has been the industry’s
+                standard.
+              </p> -->
+              <a href="https://drive.google.com/file/d/1NPgrbaByI7ArNaCff84sDwVWh6wcArQq/view?usp=share_link"
+                class="d-block btn btn-secondary px-5 mx-auto" download>
+                Download
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2-1rem">
+            <div class="card-1 text-center">
+              <span class="card-1__symbol mx-auto mb-4">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </span>
+              <h3 class="card-1__title mb-2">Progress Presentation - ii(90%)</h3>
+              <!-- <p class="card-1__paragraph">
+                Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry.
+                Lorem Ipsum has been the industry’s
+                standard.
+              </p> -->
+              <a href="https://drive.google.com/file/d/1Oj-P_dnjQpCMDA1yYTLhmELepg8QBRVU/view?usp=share_link"
+                class="d-block btn btn-secondary px-5 mx-auto" download>
+                Download
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2-1rem align-items-center">
+            <div class="card-1 text-center">
+              <span class="card-1__symbol mx-auto mb-4">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </span>
+              <h3 class="card-1__title mb-2">Final Presentation</h3>
+              <a href="https://drive.google.com/file/d/1DGUShelHbHSYU77DPRLabI8pZKGC4W9u/view?usp=share_link"
+                class="d-block btn btn-secondary px-5 mx-auto">
+                Download
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2-1rem align-items-center">
+            <div class="card-1 text-center">
+              <span class="card-1__symbol mx-auto mb-4">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </span>
+              <h3 class="card-1__title mb-2">Poster</h3>
+              <a href="https://drive.google.com/file/d/1az4G1m3m-9xMSmMalrX_jxx8MWmQa0S1/view?usp=sharing"
+                class="d-block btn btn-secondary px-5 mx-auto" download>
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- ========================================about us change part -->
+
+  <div id="aboutus" class="block-20 space-between-blocks">
+    <div class="container">
+      <div class="block__header col-lg-8 col-xl-7 mx-auto text-center px-0">
+        <h1 class="block__title mb-3"> About Us</h1>
+        <p class="block__paragraph">
+
+        </p>
+      </div>
+
+
+      <div class="row px-2 pt-4">
+
+
+
+
+        <!--Supervisor start-->
+        <div class="col-lg-6">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+
+              <div class="front">
+                <!-- front content -->
+
+                <div class="testimonial-card-1-aboutUS mb-5">
+
+                  <div class="block-20__person">
+                    <div class="mb-2">
+                      <img class="team_avtar" src="assets/imgs/Supervisor.jpg">
+                    </div>
+                    <div class="flex-grow-1 d-flex flex-column">
+                      <span class="block-20__person-rating">
+
+                      </span>
+                      <span class="block-20__person-name my-1">Dr. Pradeepa Samarasinghe</span>
+                      <span class="block-20__person-info"> </span>
+                    </div>
+                  </div>
+                  <span class="team">
+                    <i class="fas ">Supervisor</i>
+                  </span>
+                </div>
+
+
+              </div>
+              <div class="back">
+                <!-- back content -->
+                <div class="team_paragraph_set">
+                  <blockquote><br><br><br><br>
+                    <p class="supervis_paragraph">
+                      “Assistant Professor Sri Lanka Institute of Information Technology”
+                    </p>
+                  </blockquote>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Supervisor end-->
+
+
+
+
+        <!--Co-supervisor start-->
+        <div class="col-lg-6">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+
+              <div class="front">
+                <!-- front content -->
+
+                <div class="testimonial-card-1-aboutUS mb-5">
+
+                  <div class="block-20__person">
+                    <div class="mb-2">
+                      <img class="team_avtar" src="assets/imgs/co-supervisor.jpeg">
+                    </div>
+                    <div class="flex-grow-1 d-flex flex-column">
+                      <span class="block-20__person-rating">
+
+                      </span>
+                      <span class="block-20__person-name my-1">Ms . Maduka Nadeeshani</span>
+                      <span class="block-20__person-info"> </span>
+                    </div>
+                  </div>
+                  <span class="team">
+                    <i class="fas ">Co-Supervisor</i>
+                  </span>
+                </div>
+
+
+              </div>
+              <div class="back">
+                <!-- back content -->
+                <div class="team_paragraph_set">
+                  <blockquote>
+                    <br><br><br><br>
+                    <p class="supervis_paragraph">
+                      “Lecturer Sri Lanka Institute of Information Technology”
+                    </p>
+                  </blockquote>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Co-supervisor end-->
+
+
+
+
+
+
+        <!--External-supervisor start-->
+
+
+        <!--Externel-supervisor end-->
+
+
+
+
+
+
+        <!--Member1 start-->
+        <div class="col-sm-3">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+
+              <div class="front">
+                <!-- front content -->
+
+                <div class="testimonial-card-1-aboutUS mb-5">
+
+                  <div class="block-20__person">
+                    <div class="mb-2">
+                      <img class="team_avtar" src="assets/imgs/Leader.jpg">
+                    </div>
+                    <div class="flex-grow-1 d-flex flex-column">
+                      <span class="block-20__person-rating">
+
+                      </span>
+                      <span class="block-20__person-name my-1">Wijekoon W.H.M.R.M. </span>
+                      <span class="block-20__person-info"> </span>
+                    </div>
+                  </div>
+                  <span class="team">
+                    <i class="fas ">Leader</i>
+                  </span>
+                </div>
+
+
+              </div>
+              <div class="back">
+                <!-- back content -->
+                <div class="team_paragraph_set">
+                  <blockquote><br><br><br>
+                    <p class="team_paragraph">
+                      “Undergraduate of BSc. (Hons) in Information Thechnology Specialising in Data Science from Sri
+                      Lanka Institute of Information Technology.”
+                    </p>
+                  </blockquote>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Member1 end-->
+
+
+
+
+        <!--Member2 start-->
+        <div class="col-sm-3">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+
+              <div class="front">
+                <!-- front content -->
+
+                <div class="testimonial-card-1-aboutUS mb-5">
+
+                  <div class="block-20__person">
+                    <div class="mb-2">
+                      <img class="team_avtar" src="assets/imgs/Member2.jpg">
+                    </div>
+                    <div class="flex-grow-1 d-flex flex-column">
+                      <span class="block-20__person-rating">
+
+                      </span>
+                      <span class="block-20__person-name my-1">Perera T.R.D. </span>
+                      <span class="block-20__person-info"> </span>
+                    </div>
+                  </div>
+                  <span class="team">
+                    <i class="fas ">Team Member</i>
+                  </span>
+                </div>
+
+
+              </div>
+              <div class="back">
+                <!-- back content -->
+                <div class="team_paragraph_set">
+                  <blockquote><br><br><br>
+                    <p class="team_paragraph">
+                      “Undergraduate of BSc. (Hons) in Information Thechnology Specialising in Data Science from Sri
+                      Lanka Institute of Information Technology.”
+                    </p>
+                  </blockquote>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Member2 end-->
+
+
+
+
+
+
+        <!--Member3 start-->
+        <div class="col-sm-3">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+
+              <div class="front">
+                <!-- front content -->
+
+                <div class="testimonial-card-1-aboutUS mb-5">
+
+                  <div class="block-20__person">
+                    <div class="mb-2">
+                      <img class="team_avtar" src="assets/imgs/Member3.jpg">
+                    </div>
+                    <div class="flex-grow-1 d-flex flex-column">
+                      <span class="block-20__person-rating">
+
+                      </span>
+                      <span class="block-20__person-name my-1">Wijekoon R. T. P. W. W. M. P. M. B. </span>
+                      <span class="block-20__person-info"> </span>
+                    </div>
+                  </div>
+                  <span class="team">
+                    <i class="fas ">Team Member</i>
+                  </span>
+                </div>
+
+
+              </div>
+              <div class="back">
+                <!-- back content -->
+                <div class="team_paragraph_set">
+                  <blockquote><br><br><br>
+                    <p class="team_paragraph">
+                      “Undergraduate of BSc. (Hons) in Information Thechnology Specialising in Data Science from Sri
+                      Lanka Institute of Information Technology.”
+                    </p>
+                  </blockquote>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Member3 end-->
+
+
+        <!--Member4 start-->
+        <div class="col-lg-3">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+
+              <div class="front">
+                <!-- front content -->
+
+                <div class="testimonial-card-1-aboutUS mb-5">
+
+                  <div class="block-20__person">
+                    <div class="mb-2">
+                      <img class="team_avtar" src="assets/imgs/Member4.png">
+                    </div>
+                    <div class="flex-grow-1 d-flex flex-column">
+                      <span class="block-20__person-rating">
+
+                      </span>
+                      <span class="block-20__person-name my-1">lahiru nuwan S. </span>
+                      <span class="block-20__person-info"> </span>
+                    </div>
+                  </div>
+                  <span class="team">
+                    <i class="fas ">Team Member</i>
+                  </span>
+                </div>
+
+
+              </div>
+              <div class="back">
+                <!-- back content -->
+                <div class="team_paragraph_set">
+                  <blockquote><br><br><br>
+                    <p class="team_paragraph">
+                      “Undergraduate of BSc. (Hons) in Information Thechnology Specialising in Data Science from Sri
+                      Lanka Institute of Information Technology.”
+                    </p>
+                  </blockquote>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Member4 end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================== -->
+
+
+
+  <!-- =================================== -->
+
+  <!--div id="pricing" class="block-17 px-4 space-between-blocks">
+    <div class="container">
+      <div class="block-17__header col-lg-8 col-xl-7 mx-auto text-center px-0">
+        <h1 class="block__title mb-3">PRICING</h1>
+        <p class="block__paragraph">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
+          standard
+        </p>
+      </div>
+      <div class="block-17__card row flex-column-reverse flex-lg-row justify-content-center">
+        <div class="testimonial-card-3 text-center col-lg-6 px-0 d-flex align-items-center justify-content-center">
+          <div class="px-4 px-lg-5">
+            <img class="person__avatar" src="assets/imgs/profile-2.png">
+            <p class="testimonial-card-3__paragraph my-4">
+              Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the
+              industry’s standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+            <div class="flex-grow-1 d-flex flex-column mb-3">
+              <span class="person__name">Ali Boukeroui</span>
+              <span class="person__info my-1">indiehackers.com</span>
+              <span class="person__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+            </div>
+          </div>
+          <span class="testimonial-card-3__quote-symbol">
+            <i class="fas fa-quote-left"></i>
+          </span>
+        </div>
+        <div class="cta-card col-lg-5 px-0">
+          <div class="plan-card text-center">
+            <h6 class="plan-card__name mb-0">Free Shipping</h6>
+            <p class="discount mt-3 mb-0 d-flex align-items-center justify-content-center">
+              <span class="discount__old-price mx-2">$300</span>
+              <span class="discount__percentage mx-2">50% off</span>
+            </p>
+            <p class="plan-card__price my-2">$149</p>
+            <span class="plan-card__duration">90 Days Money Back Guarenteed</span>
+            <ul class="plan-features list-unstyled mt-5 mb-0">
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">The Watch</span>
+              </li>
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">+Bonus: Accessories</span>
+              </li>
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">Lifetime Mobile App</span>
+              </li>
+              <li class="mt-5">
+                <a href="#" class="d-block btn btn-primary px-5 mx-auto">
+                  Buy Now
+                </a>
+                <small class="d-block mt-2 text-center">208 Left. Discount ends after 2 weeks</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div-->
+
+  <!-- =================================== -->
+
+
+
+  <!-- =================================== -->
+
+  <div id="contact-us" class="block-28 space-between-blocks border-top border-bottom">
+    <div class="container">
+      <div class="row h-100">
+        <div class="col-lg-6 h-100 block-28__content-side">
+          <div class="contact-info">
+            <h5 class="contact-info__title mb-3">Keep Track of Your Child</h5>
+            <p class="contact-info__paragraph mb-5">
+              We would love to hear from you. Please contact us for any kind of inquiries. Your feedback on the product
+              is also will be highly appreciated
+            </p>
+            <div class="mb-5">
+              <h6 class="contact-info__title-2 mb-3">Contact</h6>
+              <p class="d-flex flex-column">
+                <span class="contact-info__item mb-2">
+                  <i class="fas fa-phone"></i><span class="mx-2">(076) 545-8789</span>
+                </span>
+                <span class="contact-info__item">
+                  <i class="fas fa-envelope"></i><span class="mx-2">child.emotion.analyxer@gmail.com</span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 h-100 block-28__form-side">
+          <form onsubmit="submitContactForm(event)" class="contact-form text-center">
+            <div class="contact-form__header mb-5">
+              <h6 class="contact-form__title mb-3">Contact Us</h6>
+              <p class="contact-form__paragraph mb-0 mx-auto">
+                For any kind of Inquiry
+              </p>
+            </div>
+            <input type="text" class="contact-form__input" placeholder="Full Name">
+            <input type="email" class="contact-form__input" placeholder="Email">
+            <textarea class="contact-form__input" placeholder="Message"></textarea>
+            <button class="btn btn-primary w-100">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================== -->
+
+
+
+  <!-- =================================== -->
+
+  <div class="block-44 py-5">
+    <div class="container">
+      <div class="row px-0 mx-0 justify-content-center align-items-center">
+        <div class="block-44__logo-container">
+          <img class="block-44__logo" src="assets/imgs/newnewlogo.png">
+        </div>
+        <ul class="block-44__list list-unstyled justify-content-center mb-0">
+          <li class="block-44__li-1">
+            <a href="#" class="block-44__link">Home</a>
+          </li>
+          <li class="block-44__li-1">
+            <a href="#project_scope" class="block-44__link">Project Scope</a>
+          </li>
+          <li class="block-44__li-1">
+            <a href="#Milestone" class="block-44__link">Milestones</a>
+          </li>
+          <li class="block-44__li-1">
+            <a href="#Documents" class="block-44__link">Documents</a>
+          </li>
+          <li class="block-44__li-1">
+            <a href="#presentations" class="block-44__link">Presentations</a>
+          </li>
+          <li class="block-44__li-1">
+            <a href="#aboutus" class="block-44__link">About Us</a>
+          </li>
+          <li class="block-44__li-1">
+            <a href="#contact-us" class="block-44__link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr class="block-44__divider">
+    <div class="container">
+      <div class="row flex-column flex-md-row px-2 justify-content-center">
+        <div class="flex-grow-1">
+          <ul class="block-44__extra-links d-flex list-unstyled p-0">
+            <li class="mx-2">
+              <a href="" class="block-44__link m-0">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="" class="block-44__link m-0">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="mailto:samarageln@gmail.com" class="block-44__link m-0">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="block-41__copyrights">&copy; 2022 Chezer All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================== -->
+
+  <script src="assets/app.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
